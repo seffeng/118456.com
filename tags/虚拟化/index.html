@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>2009-11-14 | 峰雪幽忧 -- 118456.com</title>
+  <title>Tag: 虚拟化 | 峰雪幽忧 -- 118456.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="棋盘上的兵卒走一步算一步下一步即使是错误也没有回头路我愿意结束成全你的幸福爱已结束就不要虚伪的祝福">
-<meta property="og:type" content="article">
-<meta property="og:title" content="2009-11-14">
-<meta property="og:url" content="http://118456.com/2014/11/18/2009-11-14/">
+  <meta name="description" content="118456.com,域名出售,domain sale">
+<meta property="og:type" content="website">
+<meta property="og:title" content="峰雪幽忧 -- 118456.com">
+<meta property="og:url" content="http://118456.com/tags/虚拟化/">
 <meta property="og:site_name" content="峰雪幽忧 -- 118456.com">
-<meta property="og:description" content="棋盘上的兵卒走一步算一步下一步即使是错误也没有回头路我愿意结束成全你的幸福爱已结束就不要虚伪的祝福">
+<meta property="og:description" content="118456.com,域名出售,domain sale">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2009-11-14">
-<meta name="twitter:description" content="棋盘上的兵卒走一步算一步下一步即使是错误也没有回头路我愿意结束成全你的幸福爱已结束就不要虚伪的祝福">
+<meta name="twitter:title" content="峰雪幽忧 -- 118456.com">
+<meta name="twitter:description" content="118456.com,域名出售,domain sale">
 
   
   <meta name="baidu-site-verification" content="GX7Z0cqvyz" />
@@ -73,14 +73,16 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-2009-11-14" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main">
+  
+    <article id="post-ESXi5-ssh-重启虚拟机" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/11/18/2009-11-14/" class="article-date">
-  <time datetime="2014-11-18T11:40:20.000Z" itemprop="datePublished">Nov 18 2014</time>
+    <a href="/2014/11/21/ESXi5-ssh-重启虚拟机/" class="article-date">
+  <time datetime="2014-11-21T07:14:17.000Z" itemprop="datePublished">Nov 21 2014</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/流浪的风/">流浪的风</a>
+    <a class="article-category-link" href="/categories/虚拟化/">虚拟化</a>
   </div>
 
   </div>
@@ -90,8 +92,8 @@
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      2009-11-14
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/11/21/ESXi5-ssh-重启虚拟机/">ESXi5 ssh 重启虚拟机</a>
     </h1>
   
 
@@ -99,61 +101,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>棋盘上的兵卒<br>走一步算一步<br>下一步即使是错误<br>也没有回头路<br>我愿意结束<br>成全你的幸福<br>爱已结束<br>就不要虚伪的祝福</p>
-
+        <p>1、使用自带的命令获得某个虚拟机的 ID 号</p>
+<pre><code><span class="comment"># vim-cmd vmsvc/getallvms</span>
+Vmid   <span class="keyword">Name</span>                <span class="keyword">File</span>                 Guest OS      Version   Annotation
+<span class="number">1</span>      test1   [datastore1] test1/test1.vmx   winXPProGuest   vmx-<span class="number">08</span>
+例如：我们要开虚拟机名字叫 test1 ，看到他的 Vmid=<span class="number">1</span>
+</code></pre><p>2、停止虚拟机</p>
+<pre><code><span class="comment"># vim-cmd vmsvc/power.off 1</span>
+例如：我们要停止虚拟机名字叫 test1 ，他的 Vmid=<span class="number">1</span>，运行命令：vim-cmd vmsvc/power.<span class="literal">off</span> <span class="number">1</span>
+</code></pre><p>3、启动虚拟机</p>
+<pre><code># <span class="keyword">vim</span>-cmd vmsvc/power.<span class="keyword">on</span> <span class="number">1</span>
+例如：我们要停止虚拟机名字叫 test1 ，他的 Vmid=<span class="number">1</span>，运行命令：<span class="keyword">vim</span>-cmd vmsvc/power.<span class="keyword">on</span> <span class="number">1</span>
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://118456.com/2014/11/18/2009-11-14/" data-id="sku358fi4q8d7xo2" class="article-share-link">Share</a>
+      <a data-url="http://118456.com/2014/11/21/ESXi5-ssh-重启虚拟机/" data-id="kmzx506y5w7gvmbb" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/流浪的风/">流浪的风</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/虚拟化/">虚拟化</a></li></ul>
 
     </footer>
   </div>
   
-    
-<nav id="article-nav">
-  
-    <a href="/2014/11/21/ESXi5-ssh-重启虚拟机/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          ESXi5 ssh 重启虚拟机
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2014/11/18/2011-02-03/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">2011-02-03</div>
-    </a>
-  
-</nav>
-
-  
 </article>
 
 
-  <section id="comments">
-    <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="post-2009-11-14" data-title="2009-11-14" data-url="http://118456.com/2014/11/18/2009-11-14/"></div>
-    <!-- 多说评论框 end -->
-    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-    <script type="text/javascript">
-    var duoshuoQuery = {short_name:'118456'};
-      (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0] 
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-      })();
-      </script>
-    <!-- 多说公共JS代码 end -->
-  </section>
+  
+  
 </section>
         
           <aside id="sidebar">
