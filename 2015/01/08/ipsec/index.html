@@ -3,17 +3,41 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Category: 虚拟化 | 峰雪幽忧 -- 118456.com</title>
+  <title>ipsec-IP安全策略 | 峰雪幽忧 -- 118456.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="118456.com,域名出售,domain sale">
-<meta property="og:type" content="website">
-<meta property="og:title" content="峰雪幽忧 -- 118456.com">
-<meta property="og:url" content="http://118456.com/categories/虚拟化/">
+  <meta name="description" content="控制面板\所有控制面板项\管理工具 &gt;&gt; 本地安全策略 &gt;&gt; IP 安全策略,在本地计算机
+1、删除所有策略
+1netsh ipsec static delete all
+
+2、创建IP安全策略（名称=ipsec）
+1netsh ipsec static add policy name=ipsec
+
+3、是否指派该 IPSec 策略（只能指派一个 IPSec 策略）
+1ne">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ipsec-IP安全策略">
+<meta property="og:url" content="http://118456.com/2015/01/08/ipsec/">
 <meta property="og:site_name" content="峰雪幽忧 -- 118456.com">
-<meta property="og:description" content="118456.com,域名出售,domain sale">
+<meta property="og:description" content="控制面板\所有控制面板项\管理工具 &gt;&gt; 本地安全策略 &gt;&gt; IP 安全策略,在本地计算机
+1、删除所有策略
+1netsh ipsec static delete all
+
+2、创建IP安全策略（名称=ipsec）
+1netsh ipsec static add policy name=ipsec
+
+3、是否指派该 IPSec 策略（只能指派一个 IPSec 策略）
+1ne">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="峰雪幽忧 -- 118456.com">
-<meta name="twitter:description" content="118456.com,域名出售,domain sale">
+<meta name="twitter:title" content="ipsec-IP安全策略">
+<meta name="twitter:description" content="控制面板\所有控制面板项\管理工具 &gt;&gt; 本地安全策略 &gt;&gt; IP 安全策略,在本地计算机
+1、删除所有策略
+1netsh ipsec static delete all
+
+2、创建IP安全策略（名称=ipsec）
+1netsh ipsec static add policy name=ipsec
+
+3、是否指派该 IPSec 策略（只能指派一个 IPSec 策略）
+1ne">
 
   
   <meta name="baidu-site-verification" content="GX7Z0cqvyz" />
@@ -73,16 +97,14 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-ESXi5-ssh-重启虚拟机" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-ipsec" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/11/21/ESXi5-ssh-重启虚拟机/" class="article-date">
-  <time datetime="2014-11-21T07:14:17.000Z" itemprop="datePublished">Nov 21 2014</time>
+    <a href="/2015/01/08/ipsec/" class="article-date">
+  <time datetime="2015-01-08T03:50:27.000Z" itemprop="datePublished">Jan 8 2015</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/虚拟化/">虚拟化</a>
+    <a class="article-category-link" href="/categories/windows/">windows</a>
   </div>
 
   </div>
@@ -92,8 +114,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/11/21/ESXi5-ssh-重启虚拟机/">ESXi5 ssh 重启虚拟机</a>
+    <h1 class="article-title" itemprop="name">
+      ipsec-IP安全策略
     </h1>
   
 
@@ -101,34 +123,82 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1、使用自带的命令获得某个虚拟机的 ID 号</p>
-<pre><code><span class="comment"># vim-cmd vmsvc/getallvms</span>
-Vmid   <span class="keyword">Name</span>                <span class="keyword">File</span>                 Guest OS      Version   Annotation
-<span class="number">1</span>      test1   [datastore1] test1/test1.vmx   winXPProGuest   vmx-<span class="number">08</span>
-例如：我们要开虚拟机名字叫 test1 ，看到他的 Vmid=<span class="number">1</span>
-</code></pre><p>2、停止虚拟机</p>
-<pre><code><span class="comment"># vim-cmd vmsvc/power.off 1</span>
-例如：我们要停止虚拟机名字叫 test1 ，他的 Vmid=<span class="number">1</span>，运行命令：vim-cmd vmsvc/power.<span class="literal">off</span> <span class="number">1</span>
-</code></pre><p>3、启动虚拟机</p>
-<pre><code># <span class="keyword">vim</span>-cmd vmsvc/power.<span class="keyword">on</span> <span class="number">1</span>
-例如：我们要停止虚拟机名字叫 test1 ，他的 Vmid=<span class="number">1</span>，运行命令：<span class="keyword">vim</span>-cmd vmsvc/power.<span class="keyword">on</span> <span class="number">1</span>
-</code></pre>
+        <p>控制面板\所有控制面板项\管理工具 &gt;&gt; 本地安全策略 &gt;&gt; IP 安全策略,在本地计算机</p>
+<p>1、删除所有策略</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netsh ipsec static delete all</div></pre></td></tr></table></figure>
+
+<p>2、创建IP安全策略（名称=ipsec）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netsh ipsec static add policy name=ipsec</div></pre></td></tr></table></figure>
+
+<p>3、是否指派该 IPSec 策略（只能指派一个 IPSec 策略）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netsh ipsec static <span class="keyword">set</span> policy name=ipsec assign=yes|no</div></pre></td></tr></table></figure>
+
+<p>4、添加IP筛选列表</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netsh ipsec static add filterlist name=<span class="string">"acp_tcp"</span></div></pre></td></tr></table></figure>
+
+<p>5、添加筛选器操作</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">netsh ipsec static add filteraction name=<span class="string">"acc_tcp"</span> action=<span class="string">"permit"</span>（允许）</div><div class="line">netsh ipsec static add filteraction name=<span class="string">"drop_tcp"</span> action=<span class="string">"block"</span>（阻止）</div></pre></td></tr></table></figure>
+
+<p>6、将筛选器添加到指定的筛选器列表</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netsh ipsec static add filter filterlist=<span class="string">"acc_tcp"</span> srcaddr=me dstaddr=<span class="number">42.120</span>.<span class="number">184.4</span> protocol=TCP dstport=<span class="number">80</span> dstmask=<span class="number">24</span> description=<span class="string">"user.taobao.com"</span></div></pre></td></tr></table></figure>
+
+<p>7、用指定的筛选器列表和筛选器操作创建一个规则</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">netsh ipsec static add rule name=<span class="string">"yunxu"</span> policy=ipsec filterlist=acp_tcp filteraction=acp_tcp</div><div class="line">netsh ipsec static add rule name=<span class="string">"zuzhi"</span> policy=ipsec filterlist=drop_tcp filteraction=drop_tcp</div></pre></td></tr></table></figure>
+
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://118456.com/2014/11/21/ESXi5-ssh-重启虚拟机/" data-id="ndhm4aizu2tnh770" class="article-share-link">Share</a>
+      <a data-url="http://118456.com/2015/01/08/ipsec/" data-id="dmi8f32dljxkvros" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/虚拟化/">虚拟化</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/windows/">windows</a></li></ul>
 
     </footer>
   </div>
   
+    
+<nav id="article-nav">
+  
+    <a href="/2015/01/08/MYSQL-修改密码/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          MYSQL 修改密码
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/12/15/ZeroClipboard-复制内容到剪贴板/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">ZeroClipboard 复制内容到剪贴板</div>
+    </a>
+  
+</nav>
+
+  
 </article>
 
 
-  
-  
+  <section id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="post-ipsec" data-title="ipsec-IP安全策略" data-url="http://118456.com/2015/01/08/ipsec/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'118456'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+    <!-- 多说公共JS代码 end -->
+  </section>
 </section>
         
           <aside id="sidebar">
