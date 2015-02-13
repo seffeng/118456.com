@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Category: android | 峰雪幽忧 -- 118456.com</title>
+  <title>Archives: 2015/2 | 峰雪幽忧 -- 118456.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="118456.com,域名出售,domain sale">
 <meta property="og:type" content="website">
 <meta property="og:title" content="峰雪幽忧 -- 118456.com">
-<meta property="og:url" content="http://118456.com/categories/android/">
+<meta property="og:url" content="http://118456.com/archives/2015/02/">
 <meta property="og:site_name" content="峰雪幽忧 -- 118456.com">
 <meta property="og:description" content="118456.com,域名出售,domain sale">
 <meta name="twitter:card" content="summary">
@@ -76,16 +76,12 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-android-sdk-启动失败" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-javascript页面宽度高度" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/01/08/android-sdk-启动失败/" class="article-date">
-  <time datetime="2015-01-08T04:02:42.000Z" itemprop="datePublished">Jan 8 2015</time>
+    <a href="/2015/02/13/javascript页面宽度高度/" class="article-date">
+  <time datetime="2015-02-13T07:53:13.000Z" itemprop="datePublished">Feb 13 2015</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/android/">android</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -94,7 +90,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/08/android-sdk-启动失败/">android-sdk 启动失败 </a>
+      <a class="article-title" href="/2015/02/13/javascript页面宽度高度/">javascript页面宽度高度</a>
     </h1>
   
 
@@ -102,29 +98,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>错误表现：<br>1，不能分配SD卡大小<br>2，启动时提示：Failed to start emulator: Cannot run program “/tools/emulator”: error=2, No such file or directory</p>
-<p>错误处理：<br>1，在用的架构:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~<span class="comment"># dpkg --print-architecture</span></div></pre></td></tr></table></figure>
-
-<p>输出当前的使用的架构，比如amd64 </p>
-<p>2，添加架构</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~<span class="comment"># dpkg --add-architecture i386</span></div></pre></td></tr></table></figure>
-
-<p>3，刷新下源列表</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~<span class="comment"># apt-get update</span></div></pre></td></tr></table></figure>
-
-<p>4，安装ia32-libs</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~<span class="comment"># apt-get install ia32-libs</span></div></pre></td></tr></table></figure>
-
+        <p>网页可见区域宽：document.body.clientWidth<br>网页可见区域高：document.body.clientHeight<br>网页可见区域宽：document.body.offsetWidth(包括边线的宽)<br>网页可见区域高：document.body.offsetHeight(包括边线的宽)<br>网页正文全文宽：document.body.scrollWidth<br>网页正文全文高：document.body.scrollHeight</p>
+<p>网页被卷去的高：document.body.scrollTop(IE7无效)<br>网页被卷去的左：document.body.scrollLeft(IE7无效)<br>网页被卷去的高：document.documentElement.scrollTop(IE7有效)<br>网页被卷去的左：document.documentElement.scrollLeft(IE7有效)</p>
+<p>网页正文部分上：window.screenTop<br>网页正文部分左：window.screenLeft<br>屏幕分辨率的高：window.screen.height<br>屏幕分辨率的宽：window.screen.width<br>屏幕可用工作区高度：window.screen.availHeight<br>屏幕可用工作区宽度：window.screen.availWidth</p>
+<p>相对于窗口左上角的X：window.event.clientX<br>相对于窗口左上角的Y：window.event.clientY<br>相对于整个页面的X：window.event.X<br>相对于整个页面的Y：window.event.Y</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://118456.com/2015/01/08/android-sdk-启动失败/" data-id="8ro9re2dwylqlvyr" class="article-share-link">Share</a>
+      <a data-url="http://118456.com/2015/02/13/javascript页面宽度高度/" data-id="s034t5u2o53cte2m" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
-
     </footer>
   </div>
   
